@@ -193,14 +193,14 @@ export default function Home() {
                             <Slider {...settings} ref={sliderRef}>
                                 {
                                     subjects.map((data, index) => (
-                                        <div key={index} className="transform hover:scale-105 hover:animate-pulse">
+                                        <Link  to={`/journey/${data.slug}`} key={index} className="transform hover:scale-105 hover:animate-pulse">
                                             <div className="bg-gray-50 mx-4 rounded-xl h-48 flex items-center justify-center">
                                                 <div className="">
                                                     <div className="flex justify-center mb-2"> <img src="https://toppng.com/uploads/preview/open-book-free-vector-icon-designed-by-freepik-book-11562884680cuwtbpcq2w.png" alt={data.name} className="w-20 flex justify-center text-gray-600" /></div>
                                                     <div className="text-2xl text-gray-800 font-medium text-center ">{data.name}</div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                     ))
                                 }
                             </Slider>
@@ -240,7 +240,7 @@ export default function Home() {
 
                                 {
                                     topics.map((data, index) => (
-                                        <div key={index}>
+                                        <Link to={`/content/${data.subject.name}/${data.slug}`} key={index}>
                                             <div className="bg-white shadow-md mx-4 lg:w-96 w-56  flex border transform hover:scale-105 animate-pulse ">
                                                 <div>
                                                     <div> <img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=cover,w=620/v2api/collection/10370001/6565025153024000/image/4910260035780608" alt={data.title} className="w-full" /> </div>
@@ -257,7 +257,7 @@ export default function Home() {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                     ))
                                 }
                             </Slider>
@@ -268,7 +268,7 @@ export default function Home() {
                         }
                     </div>
                     <div className="flex justify-center pt-12">
-                        <Link to="/journey" className="bg-gray-300 px-4 py-3 text-lg text-gray-500 font-semibold shadow-md transform hover:scale-105 animate-pulse font-mono rounded-2xl">Lihat Semua</Link>
+                        <Link to="/explore" className="bg-gray-300 px-4 py-3 text-lg text-gray-500 font-semibold shadow-md transform hover:scale-105 animate-pulse font-mono rounded-2xl">Lihat Semua</Link>
 
                     </div>
                 </div>
