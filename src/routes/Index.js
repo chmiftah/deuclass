@@ -12,6 +12,7 @@ export default function ReactRouter() {
       <Routes>
 
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/*" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/content/:slug/:slug" element={<Content />} />
         <Route path="/journey" element={<Journey />} />
