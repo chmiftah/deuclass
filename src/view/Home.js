@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import bg from './bg.svg'
 
-import { ArrowRightIcon, HomeIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
+import { HomeIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,7 +15,6 @@ export default function Home() {
 
     const [subjects, setSubject] = useState([])
     const [topics, setTopics] = useState([])
-    const [topicSubject, setTopicSubject] = useState([])
     const [mounted, setMounted] = useState(true);
 
     const settings = {
@@ -206,7 +205,7 @@ export default function Home() {
                                 }
                             </Slider>
                             :
-                            <Loadinger style={'flex w-full justify-center'} />
+                            <Loadinger style={`flex w-full justify-center`} />
                         }
 
 

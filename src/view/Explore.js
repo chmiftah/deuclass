@@ -112,7 +112,7 @@ export default function Explore() {
 
                             ))
                             :
-                            <Loadinger style={'lg:flex space-y-4 lg:space-y-0'} />
+                            <Loadinger style={`lg:flex space-y-4 lg:space-y-0`} />
                         }
 
 

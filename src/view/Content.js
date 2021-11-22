@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useEffect } from 'react'
 import { ArrowLeftIcon, BookOpenIcon, HomeIcon } from '@heroicons/react/solid'
 import { useNavigate, useParams } from 'react-router'
 import axios from 'axios'

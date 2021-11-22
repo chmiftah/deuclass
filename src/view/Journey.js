@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 import Loadinger from '../components/Loadinger'
 export default function Journey() {
 
-    const navigate = useNavigate()
     const [subject, setSubject] = useState([]);
     const [topic, setTopic] = useState([]);
     const [mounted, setMounted] = useState(true);
@@ -66,7 +65,7 @@ export default function Journey() {
                                 ))
                                 :
 
-                                <Loadinger style={'lg:flex space-y-4 lg:space-y-0'} />
+                                <Loadinger style={`lg:flex space-y-4 lg:space-y-0`} />
                         }
 
                     </div>
