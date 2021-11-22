@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import App from '../layout/App'
-import { useNavigate } from 'react-router'
 import axios from 'axios'
 import { useState } from 'react/cjs/react.development'
 import { Link } from 'react-router-dom'

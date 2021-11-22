@@ -263,7 +263,7 @@ export default function Home() {
                             </Slider>
                                 :
 
-                                <Loadinger style={'flex w-full justify-center'} />
+                                <Loadinger style={`flex w-full justify-center`} />
 
                         }
                     </div>

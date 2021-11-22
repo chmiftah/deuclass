@@ -27,10 +27,7 @@ export default function Content() {
         }
         getData()
 
-    }, [])
-    console.log('l', topic);
-    console.log(content);
-
+    }, [slug])
 
     return (
         <App>
